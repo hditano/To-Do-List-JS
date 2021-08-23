@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(136, 120, 151);
+}
+
+
+h1 {
+    margin: 20px;
+    display: inline-block;
+}
+
+button {
+    width: 60px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.text-input {
+    width: 200px;
+    height: 30px;
+    margin-left: 1000px;
+    margin-top: 20px;
+}
+
+.container {
+    margin: 20px auto;
+    border: 1px solid black;
+    width: 900px;
+    height: 500px;
+}
+
+.list-container {
+    display: flex;
+}
+
+.checkbox-btn {
+    display: block;
+    margin: 30px 5px 0px 20px;
+    width: 15px;
+    height: 15px;
+    size: 40px;
+}
+
+.list-p {
+    display: flex;
+    font-size: 30px;
+    margin: 20px 0 0px 5px;
+
+}
