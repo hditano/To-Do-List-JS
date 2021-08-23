@@ -1,11 +1,19 @@
 const addBtn = document.querySelector('.add-btn');
 const textInput = document.querySelector('.text-input');
 const containerList = document.querySelector('.container');
+const checkBox = document.querySelector('#item-checkbox');
 let list = [];
 
 addBtn.addEventListener('click', function () {
     list.push(textInput.value);
     renderTodoList();
+    textInput.value = '';
+})
+
+checkBox.addEventListener('click', function(e) {
+    console.log('checkbox clicked');
+    console.log(e.target.value);
+    
 })
 
 function renderTodoList() {
@@ -15,6 +23,7 @@ function renderTodoList() {
     const check = document.createElement('input');
     check.type = 'checkbox';
     check.name = 'checkbox';
+    check.id = 'item-checkbox';
     p.classList.add('list-p');
     check.classList.add('checkbox-btn');
     containerList.appendChild(div);

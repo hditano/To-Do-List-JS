@@ -37,12 +37,16 @@ button {
     display: flex;
 }
 
-.checkbox-btn {
+#item-checkbox {
     display: block;
     margin: 30px 5px 0px 20px;
     width: 15px;
     height: 15px;
     size: 40px;
+}
+
+#item-checkbox:checked + p {
+    text-decoration: line-through;
 }
 
 .list-p {
